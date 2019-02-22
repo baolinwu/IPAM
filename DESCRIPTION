@@ -1,0 +1,13 @@
+Package: IPAM
+Title: Inference problems in various ANOVA models
+Version: 0.0.1
+Imports: mvtnorm,nloptr
+Description: This package implements various methods for statistical tests and inference in ANOVA models.
+Depends: 
+    R (>= 3.0.0)
+License: GPL (>= 2)
+LazyData: true
+Encoding: UTF-8
+Author: Baolin Wu [aut, cre]; xx [aut, cre]; xx [aut, cre]
+Maintainer: Baolin Wu <baolin@umn.edu>
+RoxygenNote: 6.1.1
