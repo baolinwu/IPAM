@@ -1,8 +1,8 @@
 # IPAM
  - An R package for statistical tests in various ANOVA models
  - References
-    - Ling,S., X,X., and Wu,B. (2019) A generalized Tukey method for multiple pairwise comparisons in ANOVA model. *tech rep*.
-    - Bai,X., X,X., and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model with application to medical device comparison problems. *tech rep*.
+   - Ling,S., Johnson,C., Ellermann,J., Eberly,L. and Wu,B. (2019) A generalized Tukey method for weighted multiple pairwise comparisons in an ANOVA model. *tech rep*.
+    - Bai,X., Bai,Y., and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model with application to medical device comparison problems. *tech rep*.
  - Sample R codes
 ```R
  ## install the package
@@ -10,6 +10,7 @@
  library(IPAM)
  ## multiple testing
  GTukey(c(15,10,5), W=3:1)
+ PGTukey(rep(6,4), Qx=2.42, ik=1, W=c(5,rep(1,5)) )
  ## CI for total var
  A = rep(1:10, times=5:14)
  s2a = 0.05; s2 = 0.95

@@ -25,11 +25,11 @@ PGTukey(nr, Qx = 2, ik = 1, W = NULL)
 Given an ANOVA model with r levels, we are interested in testing the pairwise mean differences (1 vs 2,...; 2 vs 3,... etc). 
 We consider a weighted multiple hypothesis testing problem, where we allow different tests
 to get unequal type I errors, and in the meantime, we want to control the overall type I errors (familywise error rate; FWER)
-at a pre-specified level. For each comparison, we compute the multiple testing adjusted p-value, which
-is the smallest FWER that will lead to a significant test.
+at a pre-specified level. For a given comparison, we compute the multiple testing adjusted p-value, which
+is the smallest FWER that will lead to a significant test for the given comparison.
 }
 \examples{
-GTukey(c(15,10,5), W=3:1)
+PGTukey(rep(6,4), Qx=2.42, ik=1, W=c(5,rep(1,5)) )
 }
 \references{
 Ling,S., Johnson,C., Ellermann,J., Eberly,L. and Wu,B. (2019) A generalized Tukey method for weighted multiple pairwise comparisons in an ANOVA model.
