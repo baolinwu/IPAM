@@ -30,6 +30,7 @@ aa = GCIsv(poData$Y,poData$A); aa$GCI
 \references{
 Bai,Y., Wang,Z., Lystig,T.C., and Wu,B. (2019) Statistical test with sample size and power calculation for paired repeated measures designs of method comparison studies. bioRxiv, 516658.
 
-XX,X. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model with application to medical device comparison problems. tech report.
+Bai,X., Bai,Y. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model
+            with application to medical device comparison problems. tech report.
 }
 \keyword{datasets}

@@ -139,7 +139,7 @@ BGPxv <- function(Y,A, X, alpha=0.1, Nmax=1e5){
 #'
 #' @export
 #' @references
-#' Bai,X. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model
+#' Bai,X., Bai,Y. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model
 #'             with application to medical device comparison problems. tech report.
 #' @examples
 #' A = rep(1:10, times=5:14)
