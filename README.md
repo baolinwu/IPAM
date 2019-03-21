@@ -8,8 +8,10 @@
  ## install the package
  devtools::install_github('baolinwu/IPAM')
  library(IPAM)
- ## multiple testing
- GTukey(c(15,10,5), W=3:1)
+ ## Generalized Tukey test for weighted post hoc comparisons
+ ## Compute post hoc comparison critical value given a FWER
+ GTukey(c(15,10,5), alpha=0.05, W=3:1)
+ ##  multiple testing adjusted p-value/FWER 
  PGTukey(rep(6,4), Qx=2.42, ik=1, W=c(5,rep(1,5)) )
  ## CI for total var
  A = rep(1:10, times=5:14)
