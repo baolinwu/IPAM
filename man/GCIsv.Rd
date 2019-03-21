@@ -4,7 +4,7 @@
 \alias{GCIsv}
 \title{Generalized confidence interval for the total variance in a single-factor random-effects ANOVA model}
 \usage{
-GCIsv(Y, A, alpha = 0.1, Nmax = 1e+05)
+GCIsv(Y, A, alpha = 0.1, Nmax = 2000)
 }
 \arguments{
 \item{Y}{observed outcomes in an ANOVA model}
@@ -35,6 +35,6 @@ BGPsv(Y,A)
 aa = GCIsv(Y,A); aa$GCI
 }
 \references{
-X,X. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model
+Bai,X. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model
             with application to medical device comparison problems. tech report.
 }

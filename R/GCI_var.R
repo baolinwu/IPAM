@@ -139,7 +139,7 @@ BGPxv <- function(Y,A, X, alpha=0.1, Nmax=1e5){
 #'
 #' @export
 #' @references
-#' X,X. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model
+#' Bai,X. and Wu,B. (2019) Generalized confidence interval calculation for the total variance in a single-factor random-effects ANOVA model
 #'             with application to medical device comparison problems. tech report.
 #' @examples
 #' A = rep(1:10, times=5:14)
@@ -147,7 +147,7 @@ BGPxv <- function(Y,A, X, alpha=0.1, Nmax=1e5){
 #' Y = rnorm(10)[A]*sqrt(s2a) + rnorm(length(A))*sqrt(s2)
 #' BGPsv(Y,A)
 #' aa = GCIsv(Y,A); aa$GCI
-GCIsv <- function(Y,A, alpha=0.1, Nmax=1e5){
+GCIsv <- function(Y,A, alpha=0.1, Nmax=2e3){
   ## sufficient stats
   ng = as.vector(table(A)); m = length(ng); N = sum(ng)
   sse = sum(tapply(Y, A, var)*(ng-1), na.rm=TRUE)
@@ -181,7 +181,7 @@ S2Asol <- function(s2,ng,mus,Qr){
   return(ans)
 }
 
-GCIxv <- function(Y,A, X, alpha=0.1, Nmax=1e5){
+GCIxv <- function(Y,A, X, alpha=0.1, Nmax=2e3){
   obj = QUADinf(Y,X,A)
   r = obj$r;  s = obj$s; 
   SSE = obj$SSE; MSM = obj$MSM

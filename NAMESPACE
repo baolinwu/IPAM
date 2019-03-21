@@ -3,4 +3,5 @@
 export(BGPsv)
 export(GCIsv)
 export(GTukey)
+export(PGTukey)
 useDynLib(IPAM)
